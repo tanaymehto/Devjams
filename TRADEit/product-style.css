@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex; /* Use flexbox for full screen layout */
+    height: calc(100vh - 60px); /* Full height minus header height */
+}
+
+.product-detail {
+    display: flex;
+    flex: 1; /* Take up all available space */
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-image {
+    max-width: 50%; /* Make the image take up half the space */
+    height: 550px;
+    border-radius: 5px;
+}
+
+.product-description {
+    flex-grow: 1;
+    padding-left: 20px; /* Add some spacing to the left of the description */
+}
+
+.product-description h2 {
+    margin: 0;
+}
+
+.product-description p {
+    margin: 10px 0;
+}
+
+.payment-button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #007bff;
+    color: white;
+    position: fixed;
+    opacity: 0.5;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

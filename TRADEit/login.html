@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-style.css">
+    <title>TRADEit - Login</title>
+    <script>
+        // login-script.js
+
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const errorMessage = document.getElementById('error-message');
+
+            // Simple validation (can be extended)
+            if (name === '' || email === '' || mobile === '' || password === '') {
+                errorMessage.textContent = 'Please fill out all fields';
+                errorMessage.style.display = 'block';
+                return;
+            }
+
+            // Proceed with login (Here you would typically make a backend request)
+            errorMessage.style.display = 'none';
+            alert('Login successful!');
+
+            // Optionally, clear the form
+            document.getElementById('login-form').reset();
+        });
+
+        document.getElementById('forgot-password').addEventListener('click', function (e) {
+            e.preventDefault();
+            alert('Forgot password functionality to be implemented.');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login to TRADEit</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Primary Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <small><a href="#" id="forgot-password">Forgot password?</a></small>
+                </div>
+                <div class="form-group">
+                    <label for="verification">2-Step Verification</label>
+                    <input type="checkbox" id="verification" name="verification">
+                </div>
+                <div class="form-group">
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        Remember Me
+                    </label>
+                </div>
+                <button type="submit" id="login-btn">Login</button>
+                <p class="error-message" id="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login-script.js"></script>
+</body>
+
+</html>

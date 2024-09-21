@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico.png" type="Image">
+    <title>TRADEit-Student Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2><a href="index.html">TRADEit</a></h2>
+            <ul>
+                <li><a href="post-ad.html">Post</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <div class="hero">
+            <div class="bg">
+                <h1>Welcome to the VIT Student Marketplace</h1>
+                <p>Find or post items within your college campus!</p>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search ads...">
+                    <button id="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16" style="color: white;">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Categories Horizontal Scroller -->
+        <h2 style="padding-left: 20px; background-color: #007bff; color: white; height: 40px; align-items: center;">
+            Categories </h2>
+        <div class="categories">
+            <div class="card">
+                <img src="Assets/electronics.jpg" alt="Electronic Gadgets">
+                <p class="card-title">Electronics</p>
+            </div>
+            <div class="card">
+                <img src="Assets/shopping.webp" alt="Cycles">
+                <p class="card-title">Cycles</p>
+            </div>
+            <div class="card">
+                <img src="Assets/shopping-2.webp" alt="Mattress and Pillows">
+                <p class="card-title">Mattress and Pillows</p>
+            </div>
+            <div class="card">
+                <img src="Assets/Books.jpeg.webp" alt="Books">
+                <p class="card-title">Books</p>
+            </div>
+            <div class="card">
+                <img src="Assets/shopping-3.webp" alt="Buckets">
+                <p class="card-title">Buckets</p>
+            </div>
+        </div>
+
+        <!-- Listings -->
+        <h2 style="padding-left: 20px; background-color: #007bff; color: white; height: 40px; align-items: center;">
+            Listings</h2>
+        <div class="listings">
+            <div class="listing-card">
+                <img src="./Assets/shopping.webp" alt="Bike for Sale">
+                <p class="listing-description">Hardly used, perfect for campus commuting.</p>
+                <p class="listing-price">1500</p>
+                <a href="product.html"><button class="contact-button">Details</button></a>
+            </div>
+            <div class="listing-card">
+                <img src="./resources/mac_listing.jpg" alt="Laptop for Sale">
+                <p class="listing-description">A gently used laptop in great condition. Perfect for studies!</p>
+                <p class="listing-price">₹ 15000</p>
+                <button class="contact-button">Details</button>
+            </div>
+
+            <div class="listing-card">
+                <img src="Assets/Books.jpeg.webp" alt="Textbooks">
+                <p class="listing-description">Various textbooks available. Prices vary.</p>
+                <p class="listing-price">₹ 400</p>
+                <button class="contact-button">Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="./resources/desk.jpg" alt="Bed Table">
+                <p class="listing-description">Solid wood desk, great for studying.</p>
+                <p class="listing-price">₹ 500</p>
+                <button class="contact-button">Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="./resources/chair.jpg" alt="Office Chair">
+                <p class="listing-description">Comfortable office chair, perfect for long study sessions.</p>
+                <p class="listing-price">₹ 750</p>
+                <button class="contact-button">Details</button>
+            </div>
+            <div class="listing-card">
+                <img src="Assets/calculator.jpg" alt="Scientific calculator">
+                <p class="listing-description">Stylish dining table, seats four.</p>
+                <p class="listing-price">₹ 800</p>
+                <button class="contact-button">Details</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

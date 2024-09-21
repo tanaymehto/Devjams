@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Ad - Student Marketplace</title>
+    <link rel="stylesheet" href="style-1.css">
+    <script>
+        document.getElementById('ad-form').addEventListener('submit', function (event) {
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            const price = document.getElementById('price').value;
+
+            if (!title || !description || !price) {
+                alert('Please fill out all fields before submitting.');
+                event.preventDefault(); // Prevent form from submitting
+            } else {
+                alert('Ad posted successfully!');
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"> TRADEit </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Post Your Product</h2>
+        <form id="ad-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <button type="submit">Post Product</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRADEit</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

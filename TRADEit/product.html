@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="product-style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-detail">
+            <img src="Assets/bike.jpg" alt="Bike" class="product-image">
+            <div class="product-description">
+                <h2>Product: Bike</h2>
+                <p><strong>Price:</strong> Rs.1500</p>
+                <p><strong>Condition:</strong> Hardly used, perfect for campus commuting.</p>
+                <p><strong>Detailed Description:</strong></p>
+                <p>This bike is designed for smooth rides on campus with a lightweight frame, high-performance tires, and an adjustable seat for comfort. The gears shift effortlessly, making it easy to navigate through various terrains. Ideal for students looking for a reliable and stylish mode of transportation.</p>
+                <p><strong>Delivery Location:</strong> Men's Hostel K Block</p>
+                <form action="payment.html" method="GET">
+                    <input type="hidden" name="product" value="Bike">
+                    <input type="hidden" name="price" value="1500">
+                    <button type="submit" class="payment-button">Proceed to Payment</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TRADEit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
